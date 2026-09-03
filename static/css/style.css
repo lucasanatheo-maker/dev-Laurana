@@ -103,9 +103,11 @@ body {
 
     padding: 50px 0;
 }
+
 h2 {
     color: #8f0000;
 }
+
 .apresentacao {
     text-align: center;
     margin-bottom: 30px;
@@ -305,4 +307,219 @@ h2 {
         height: 80px;
     }
 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f6efe2;
+    color: #3b2a20;
+    line-height: 1.5;
+}
+
+header {
+    background: #961212;
+    border-bottom: 1px solid #d8c8ad;
+    padding: 22px 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 75px;
+    margin-bottom: 8px;
+}
+
+.restaurant-name {
+    font-size: 2rem;
+    color: #e9d499;
+    font-weight: bold;
+}
+
+.restaurant-subtitle {
+    color: #c9a888;
+    font-size: 0.95rem;
+}
+
+nav {
+    margin-top: 16px;
+}
+
+nav a {
+    color: #b6a094;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #8d1f1f;
+}
+
+.intro {
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.intro h1 {
+    font-size: 2.4rem;
+    color: #8d1f1f;
+    margin-bottom: 8px;
+}
+
+.intro p {
+    color: #75604c;
+}
+
+.ornamento {
+    width: 55px;
+    height: 2px;
+    background: #b48a45;
+    margin: 16px auto;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px 50px;
+}
+
+.categoria {
+    font-size: 1.6rem;
+    color: #527044;
+    border-bottom: 1px solid #d8c8ad;
+    padding-bottom: 8px;
+    margin: 25px 0 20px;
+}
+
+.cardapio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.item {
+    background: #fffaf1;
+    border: 1px solid #dfd0b8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(59, 42, 32, 0.08);
+}
+
+.item img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.item-content {
+    padding: 16px;
+}
+
+.item h3 {
+    color: #8d1f1f;
+    font-size: 1.15rem;
+    margin-bottom: 7px;
+}
+
+.item p {
+    color: #75604c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    min-height: 55px;
+}
+
+.item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.preco {
+    color: #527044;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.pedir {
+    border: none;
+    background: #8d1f1f;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pedir:hover {
+    background: #6f1717;
+}
+
+footer {
+    background: #3b6b25;
+    color: #fffaf1;
+    text-align: center;
+    padding: 28px 20px;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+footer small {
+    display: block;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+    .cardapio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .restaurant-name {
+        font-size: 1.7rem;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .cardapio {
+        grid-template-columns: 1fr;
+    }
+
+    .item img {
+        height: 220px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+}
+
+button .pedir {
+    background-color: #e6b84c;
+    color: rgb(146, 10, 10);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
 }
